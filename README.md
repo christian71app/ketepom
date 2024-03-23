@@ -1,4 +1,4 @@
-#KETEPOM
+##KETEPOM
 I present to you this game called *KETEPOM*, which is intended to be a combat game, where you choose your pet, followed by traveling around the map to collide with an enemy and later have a fight with it.
 Already in combat the decision is made if you win, lose or draw. This depends on the victories that you and your enemy obtain during the fight, choosing with the buttons the attacks that your chosen pet will use (5 in this case).
 
