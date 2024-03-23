@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KETEPOM! 💥💢💨 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="seleccion_mascota">
+        <h1 class="titulo">KETEPOM! 🔥💧🌱</h1>
+        <h2 class="subtitulo1">Selecciona una mascota:</h2>
+        <div id='contenedorTarjetas' class="tarjetas_nombres">
+        </div>  
+
+        <!-- Hipodog -> Agua -->
+        <!-- Capipepe -> Tierra -->
+        <!-- Rattigueya -> Fuego -->
+        <!-- Langostina -> Agua y Fuego -->
+        <!-- Tukapalma -> Tierra y Agua -->
+        <!-- Pydols -> Fuego y Tierra -->
+
+    <button id="boton_mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver_mapa">
+        <h1 class="titulo">KETEPOM! 🔥💧🌱</h1>
+        <h2 class="subtitulo1">Recorre el mapa con tu mascota</h2>
+        <canvas id="mapa"></canvas>
+        <button id="arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">↑</button>
+        <div>
+            <button id="izquierda" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">←</button>
+            <button id="abajo" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">↓</button>
+            <button id="derecha" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">→</button>
+        </div>
+    </section>
+
+    <section id="seleccion_ataque">
+        <h1 class="titulo">KETEPOM! 🔥💧🌱</h1>
+
+        <h2 class="subtitulo1">Selecciona un ataque:</h2>
+
+        <div id='contenedorAtaques' class="tarjetas_ataques">
+        </div>
+        <div>
+            <section id="mensajes">
+                <p id="resultado_general">Mucha suerte 😉</p>
+                <section id="reiniciar">
+                    <button id="boton_reiniciar">Reiniciar</button>
+                </section>
+            </section>
+        </div>
+
+        <div class="attacks">
+            <div class="atackks_jugador">
+                <p class="victorys"><span id="victorias_jugador">0</span>  🏆</p>
+                <p id="subnombre">JUGADOR</p>
+                <p id="mascota_jugador"></p>
+                <div id="ataques_jugador"></div>
+            </div>
+            
+            <div class="atackks_enemigo">
+                <p class="victorys"><span id="victorias_enemigo">0</span>  🏆</p>
+                <p id="subnombre">ENEMIGO</p>
+                <p id="mascota_enemigo"></p>
+                <div id="ataques_enemigo"></div>
+            </div>
+        </div>
+
+    </section>
+    <div id="footer">
+        <footer>
+        <p class="footer1">This game was developed by </p>
+        <span class="nombre">Christian Tineo Villon</span>
+        </footer>
+    </div>  
+    <script src="js/ketepom.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+/* Tipos, clases, id */
+/* Tipos son los h1, p, section, etc en general (se coloca el nombre del tipo de etiqueta)*/
+/* Clases son algo mas especifico del h1, p, etc (se le coloca un . al inicio)*/
+/* Id's son mas que especificos (se le coloca una # al inicio) */
+
+body {
+    font-family: "Rowdies", sans-serif;
+    background-color: #0C356A;
+}
+.titulo {
+    color: #9BBEC8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1px;
+    align-items: center;
+    font-size: 62px;
+}
+
+.subtitulo1 {
+    color: #F0F0F0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#nombre {
+    font-size: 22px;
+    margin-bottom: 13px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.nombre_tipo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seleccion_mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+#contenedorTarjetas {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tarjetas_ataques, .tarjetas_nombres {
+    display: flex;
+    gap: 8px;
+}
+
+.tarjeta_ketepom {
+    color: black;
+    width: 280px;
+    height: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    background-color: #64CCC5;
+    box-sizing: border-box;
+    margin: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 20px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta_ketepom:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 2px solid white;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.tarjeta_ketepom img {
+    width: 115px;
+}
+
+img#tipofoto {        
+    width: 100px;
+}
+
+input {
+    display: none;
+    background-color: aqua;
+    width: 15px;
+    height: 10px;
+}
+
+input:checked + label {
+    background-color: #279EFF;
+    border: 1px solid #2D9596;
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+
+button {
+    font-family: "Sofia Sans", sans-serif;
+    background-color: burlywood;
+    width: 310px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#boton_mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+#boton_mascota:hover {
+    cursor: pointer;
+}
+
+#seleccion_ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ataque_boton {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: #0174BE;
+    border: transparent;
+    color: white;
+    padding: 6px;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.ataque_boton:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid white;
+}
+
+#mensajes {
+    width: 280px;
+    background-color: #7FC7D9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton_reiniciar {
+    background-color: transparent;
+    width: 74px;
+    height: 32px;
+    border: none;
+    color: #124076;
+    font-family: "Sofia Sans", sans-serif;
+    margin-top: -23px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+#subnombre {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #52D3D8;
+    margin: 0px 10px 0px 10px;
+}
+
+#boton_reiniciar:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid #365486;
+}
+
+.victorys {
+    margin: 15px 10px 10px 10px;
+}
+
+.attacks {
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+#victorias_jugador, #victorias_enemigo {
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.atackks_jugador, .atackks_enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer {
+    text-align: center;
+    height: 1%;
+    margin-top: 10px;
+}
+
+.footer1 {
+    font-family: monospace;
+    color: white;
+    font-size: 14px;
+    display: inline;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombre {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ver_mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver_mapa button {
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    /* margin: 10px 0 0px 0px; */
+}
+
+#mapa {
+    border: 2px solid white;
+}
+
+#arriba, #abajo, #izquierda, #derecha {
+    width: 80px;
+    height: 40px;
+}
+
+#abajo {
+    margin: 10px 0px 0px 0px;
+}
+
+#izquierda {
+    margin: 10px;
+}
+
+#derecha {
+    margin: 10px;
+}
+
+#ver_mapa div {
+    display: flex;
+}
+
+@media (max-width: 440px) {
+    .tarjetas_nombres, .tarjetas_ataques {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .subtitulo1 {
+        font-size: 19px;
+        margin-bottom: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 19px;
+    }
+
+    #contenedorTarjetas {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #nombre {
+        font-size: 17px;
+        margin: 12px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #footer {
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nombre {
+        font-size: 12px;
+    }
+
+    .footer1 {
+        font-size: 12px;
+        
+    }
+
+    #seleccion_mascota {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .tarjeta_ketepom {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 210px;
+        height: 70px;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: -2px;
+    }
+
+    .tarjeta_ketepom img {
+        width: 65px;
+        text-align: center;
+    }
+
+    img#tipofoto {        
+        width: 50px;
+    }
+
+    #boton_mascota {
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .ataque_boton {
+        margin: 6px;
+        width: 75px;
+        height: 30px;
+    }
+    
+    #mapa {
+        border: 2px solid white;
+    }
+
+    #boton_reiniciar:hover {
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 2px solid #365486;
+    }
+}
+
+@media (max-height: 570px) {
+    .tarjetas_nombres, .tarjetas_ataques {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .titulo {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    .subtitulo1 {
+        font-size: 19px;
+        margin-bottom: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 165vh;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #contenedorTarjetas {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    #nombre {
+        font-size: 17px;
+        margin: 12px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #footer {
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nombre {
+        font-size: 12px;
+    }
+
+    .footer1 {
+        font-size: 12px;
+        
+    }
+
+    #seleccion_mascota {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 160vh;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .tarjeta_ketepom {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 209px;
+        height: 82px;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 8px
+    }
+
+    .tarjeta_ketepom img {
+        width: 65px;
+        text-align: center;
+    }
+
+    img#tipofoto {        
+        width: 50px;
+    }
+
+    #boton_mascota {
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .ataque_boton {
+        margin: 6px;
+        width: 75px;
+        height: 30px;
+    }
+
+    #mensajes {
+        padding: 0px;
+    }
+
+    .atackks_jugador, .atackks_enemigo {
+        margin-top: -16px;
+    }
+    
+    #mapa {
+        border: 2px solid white;
+    }
+
+    .ataque_boton:hover {
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 2px solid white;
+    }
+
+    #boton_reiniciar:hover {
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 2px solid #365486;
+    }
+}
