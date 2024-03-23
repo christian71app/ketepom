@@ -8,9 +8,9 @@ This code was created based on languages such as HTML, CSS and JavaScript.
 - The enemy is the computer that, according to the map, when you collide with one of these, the battle will start.
 ### Pets
 There are 6 pets to choose from:
- 		Hipodog -> Water 
-        Capipepe -> Earth
-        Rattigueya -> Fire
-        Langostina -> Water and Fire
-        Tukapalma -> Earth and Water
-        Pydols -> Fire and Earth
+- Hipodog -> Water
+- Capipepe -> Earth
+- Rattigueya -> Fire
+- Langostina -> Water and Fire
+- Tukapalma -> Earth and Water
+- Pydols -> Fire and Earth
