@@ -27,11 +27,11 @@
         <h1 class="titulo">KETEPOM! 🔥💧🌱</h1>
         <h2 class="subtitulo1">Recorre el mapa con tu mascota</h2>
         <canvas id="mapa"></canvas>
-        <button id="arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">↑</button>
+        <button id="arriba" ontouchstart="moverArriba()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">↑</button>
         <div>
-            <button id="izquierda" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">←</button>
-            <button id="abajo" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">↓</button>
-            <button id="derecha" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">→</button>
+            <button id="izquierda" ontouchstart="moverIzquierda()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">←</button>
+            <button id="abajo" ontouchstart="moverAbajo()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">↓</button>
+            <button id="derecha" ontouchstart="moverDerecha()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">→</button>
         </div>
     </section>
 
